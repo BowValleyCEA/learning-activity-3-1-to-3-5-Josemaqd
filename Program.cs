@@ -1,10 +1,50 @@
 ﻿// See https://aka.ms/new-console-template for more information
+ClassActivity1();
 LearningActivity31();
 LearningActivity32();
 LearningActivity33();
 LearningActivity34();
 LearningActivity35();
 
+void ClassActivity1()
+{
+    string userInput = "";
+    Console.WriteLine("Hi! Do you want candy, if so enter the van.");
+    Console.WriteLine("Answer with y or n");
+    while (userInput != "y")
+    {
+        /*userInput = Console.ReadLine();
+        if (userInput == "n")
+        {
+            Console.WriteLine("Come on, you want to.");
+        }
+        else if (userInput == "y")
+        {
+            break;
+        }
+        else
+        {
+            Console.WriteLine("try again");
+        }*/
+        userInput = Console.ReadLine();
+        if(userInput == "n")
+        {
+            Console.WriteLine("Come on, you want to.");
+            continue;
+        }
+        else if(userInput == "y")
+        {
+            continue;
+        }
+        else
+        {
+            Console.WriteLine("WHAT?");
+            continue;
+        }
+    }
+    Console.WriteLine("You died!");
+
+}
 void LearningActivity31()
 {
     Console.WriteLine("This is the function for Learning Activity 3.1!");
